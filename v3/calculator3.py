@@ -40,6 +40,3 @@ while True:
             
     if symbol == "^":
         print(math.pow(float(before_symbol) + float(after_symbol)))
-        
-if symbol == "^":
-    print(math.pow(float(before_symbol) + float(after_symbol)))
