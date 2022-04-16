@@ -11,7 +11,7 @@ while True:
     before_symbol = ""
     after_symbol = ""
     symbol = ""
-    symbol_seen = False
+    symbol_seen: bool = False
     if expression.upper() == 'Q':
         break
         
@@ -20,10 +20,10 @@ while True:
             symbol = a
             symbol_seen = True
         
-        elif symbol_seen == False:
+        elif not symbol_seen:
             before_symbol = before_symbol + a
             
-        elif symbol_seen == True:
+        elif symbol_seen:
             after_symbol = after_symbol + a
             
     if symbol == "+":
